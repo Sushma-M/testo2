@@ -1,0 +1,542 @@
+/*START - Minimal Theme*/
+/*LESS Mixins */
+/* SUMMARY:
+PREFIX and their respective meanings:
+-webkit- -  Webkit (Safari/Chrome)
+-moz- Mozilla Firefox
+-ms-  IE
+-o-   Opera
+filter: Internet Explorer
+*/
+/*Gradient background: Fades from top to bottom*/
+/*Setting background to none does not remove gradient background in IE9. Hence, another mixin is used to solve this.
+This mixin removes background from IE & all other browsers so that they are consistent */
+/*Returns Width and Height of an element*/
+/*Applies border style*/
+/*Box Shadow effect*/
+/*Applies inset shadow effect*/
+/*Ease in and out effects when input elements are clicked upon*/
+/*Glow effect when input elements are clicked upon*/
+/*Rotates text; Used to rotate the links (Files and Services) in the static section of the Left Sliding Panel*/
+/*Rotate Text on Y axis (Files and Services links)*/
+/*Background images for studio*/
+/*Background images position */
+/*Background images for Pages such as My Projects, etc.*/
+/*Very important to fix the flicker that appears in Google Chrome when a transition takes place or when
+the left sliding panel (containing File & Services vertical links) is clicked upon*/
+/*Removes the default styling of list items*/
+/*Box Sizing cross browser compatible*/
+/*Reset margin and padding to 0*/
+/*Adds a white text shadow*/
+/*The text of the element and sub-elements will appear as if they cannot be selected.*/
+/*To clear floats, just apply the class "clear" on the parent container of the divs that are floated*/
+/*Adds animation affect*/
+/*Styling all input elements like textbox, textarea, select*/
+/*Element Blurb*/
+/*to position an element in the centre of the container */
+/*To show ellipsis for longer text*/
+/**********************************Button classes***********************************/
+/*Studio Dialogs common different pages*/
+.wm-app {
+  /*For App Widgets*/
+
+  /*Grid*/
+
+  /*File Upload Widget*/
+
+  /*Dialog Widget*/
+
+  /*Accordion Widget*/
+
+  /*Tabs Widget*/
+
+  /*For App Header, Body & Footer colors*/
+
+  /*For top nav*/
+
+  /*For footer */
+
+  /*For left nav*/
+
+  /*For right nav*/
+
+  /*Grid styling*/
+
+  /*Upload Widget*/
+
+  /*Dialog Widget*/
+
+  /*Accordion Widget*/
+
+  /*Tabs Widget*/
+
+  /*App Header, Body & Footer*/
+
+}
+.wm-app .app-label,
+.wm-app .app-anchor {
+  color: #333333;
+}
+.wm-app .app-button,
+.wm-app .btn.btn-default {
+  color: #ffffff;
+  border-radius: 4px;
+  background-color: #7e3e18;
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fab37f), color-stop(1, #7e3e18));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fab37f 5%, #7e3e18 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fab37f 5%, #7e3e18 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fab37f 5%, #7e3e18 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fab37f 5%, #7e3e18 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fab37f 5%, #7e3e18 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fab37f, endColorstr=#7e3e18);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fab37f', EndColorStr='#7e3e18')";
+  /* IE8, IE9 */
+
+  border: 1px solid #7e3e18;
+}
+.wm-app .app-button:hover,
+.wm-app .btn.btn-default:hover {
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f8964e), color-stop(1, #532910));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #f8964e 5%, #532910 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #f8964e 5%, #532910 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #f8964e 5%, #532910 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #f8964e 5%, #532910 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #f8964e 5%, #532910 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f8964e, endColorstr=#532910);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#f8964e', EndColorStr='#532910')";
+  /* IE8, IE9 */
+
+}
+.wm-app .app-button.btn-secondary {
+  color: #666666;
+  background-color: #eeeeee;
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #eeeeee));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #ffffff 5%, #eeeeee 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #ffffff 5%, #eeeeee 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #ffffff 5%, #eeeeee 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #ffffff 5%, #eeeeee 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #ffffff 5%, #eeeeee 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#ffffff, endColorstr=#eeeeee);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#ffffff', EndColorStr='#eeeeee')";
+  /* IE8, IE9 */
+
+}
+.wm-app .app-button.btn-secondary:hover {
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e6e6e6), color-stop(1, #d5d5d5));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #e6e6e6 5%, #d5d5d5 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #e6e6e6 5%, #d5d5d5 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #e6e6e6 5%, #d5d5d5 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #e6e6e6 5%, #d5d5d5 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #e6e6e6 5%, #d5d5d5 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e6e6e6, endColorstr=#d5d5d5);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#e6e6e6', EndColorStr='#d5d5d5')";
+  /* IE8, IE9 */
+
+}
+.wm-app .app-textbox,
+.wm-app .app-textarea,
+.wm-app .app-select,
+.wm-app .input-group-addon {
+  background-color: #ffffff;
+}
+.wm-app .gridStyle {
+  border: 1px solid #7e3e18;
+}
+.wm-app .ngTopPanel {
+  background-color: #f98c39;
+  border-bottom: 1px solid #f86f07;
+  color: #954304;
+  text-transform: capitalize;
+}
+.wm-app .ngRow.even {
+  background-color: #ffffff;
+}
+.wm-app .ngRow.odd {
+  background-color: #f4f4f4;
+}
+.wm-app .ngHeaderContainer {
+  background-color: #fae7d8;
+  color: #803f19;
+}
+.wm-app .app-fileupload .drop-box {
+  background-color: #e0f6ff;
+  border: 2px dashed #f86f07;
+}
+.wm-app .app-fileupload [data-identifier=drop-message] {
+  color: #803f19;
+}
+.wm-app .app-fileupload [data-identifier=file-message] {
+  color: #803f19;
+}
+.wm-app .app-fileupload [data-identifier="file-message"] a {
+  color: #803f19;
+}
+.wm-app .app-dialog-header {
+  background-color: #fae7d8;
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fae7d8), color-stop(1, #edab76));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fae7d8 5%, #edab76 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fae7d8 5%, #edab76 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fae7d8 5%, #edab76 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fae7d8 5%, #edab76 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fae7d8 5%, #edab76 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fae7d8, endColorstr=#edab76);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fae7d8', EndColorStr='#edab76')";
+  /* IE8, IE9 */
+
+  color: #803f19;
+}
+.wm-app .app-dialog-header .app-dialog-close {
+  background-color: #edab76;
+  border: 1px solid #f86f07;
+}
+.wm-app .app-dialog-footer {
+  background-color: #f0f6f8;
+}
+.wm-app .app-search .input-group-addon,
+.wm-app .app-currency .input-group-addon {
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #fae7d8), color-stop(1, #f95b06));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fae7d8 100%, #f95b06 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fae7d8 100%, #f95b06 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fae7d8 100%, #f95b06 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fae7d8 100%, #f95b06 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fae7d8 100%, #f95b06 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fae7d8, endColorstr=#f95b06);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fae7d8', EndColorStr='#f95b06')";
+  /* IE8, IE9 */
+
+  color: #ffffff;
+}
+.wm-app .app-accordion .app-accordion-panel .panel-heading {
+  background-color: #fae7d8;
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #fae7d8), color-stop(1, #fae7d8));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fae7d8 100%, #fae7d8 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fae7d8 100%, #fae7d8 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fae7d8 100%, #fae7d8 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fae7d8 100%, #fae7d8 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fae7d8 100%, #fae7d8 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fae7d8, endColorstr=#fae7d8);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fae7d8', EndColorStr='#fae7d8')";
+  /* IE8, IE9 */
+
+  border: 1px solid #7e3e18;
+}
+.wm-app .app-accordion .app-accordion-panel .panel-collapse {
+  background-color: #ffffff;
+  border: 1px solid #7e3e18;
+}
+.wm-app .app-accordion .app-accordion-panel .panel-title .heading {
+  color: #803f19;
+}
+.wm-app .app-accordion .app-accordion-panel .accordion-heading {
+  font-weight: bold;
+  text-shadow: 0px 1px #ffffff;
+}
+.wm-app .app-tabs.tabbable .nav-tabs {
+  border-bottom: 1px solid #7e3e18;
+}
+.wm-app .app-tabs.tabbable .nav > li > a {
+  color: #ffffff;
+  background-color: #f95b06;
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fae7d8), color-stop(1, #f95b06));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fae7d8 5%, #f95b06 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fae7d8, endColorstr=#f95b06);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fae7d8', EndColorStr='#f95b06')";
+  /* IE8, IE9 */
+
+}
+.wm-app .app-tabs.tabbable .nav > li > a:hover,
+.wm-app .app-tabs.tabbable .nav > li > a:focus {
+  border-color: transparent;
+}
+.wm-app .app-tabs.tabbable .nav > li.active > a {
+  border: 1px solid #7e3e18;
+  background-color: #ffffff;
+  color: #803f19;
+  border-bottom-color: transparent;
+}
+.wm-app .app-tabs.tabbable .tab-content .tab-pane .tab-body {
+  border: 1px solid #7e3e18;
+  border-top: 0;
+  background-color: #ffffff;
+}
+.wm-app .app-header {
+  background-color: #ffffff;
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fae7d8), color-stop(1, #f95b06));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fae7d8 5%, #f95b06 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fae7d8, endColorstr=#f95b06);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fae7d8', EndColorStr='#f95b06')";
+  /* IE8, IE9 */
+
+  color: #000000;
+  box-shadow: none;
+  border-bottom: 1px solid #803f19;
+}
+.wm-app .app-header .application-name {
+  color: #000000;
+}
+.wm-app .app-content {
+  color: #666666;
+}
+.wm-app .app-footer {
+  background-color: #2e3136;
+  color: #f95b06;
+}
+.wm-app .app-top-nav {
+  background-color: #edab76;
+  color: #f95b06;
+  padding: 0 8px;
+  border-bottom: none;
+}
+.wm-app .app-top-nav .app-list .app-list-item .app-anchor,
+.wm-app .app-top-nav .app-list .app-list-item .app-button {
+  border: none;
+  border-radius: 0;
+  color: #7e3e18;
+  padding: 8px;
+}
+.wm-app .app-top-nav .app-list .app-list-item .app-anchor:hover,
+.wm-app .app-top-nav .app-list .app-list-item .app-button:hover,
+.wm-app .app-top-nav .app-list .app-list-item .app-anchor.active,
+.wm-app .app-top-nav .app-list .app-list-item .app-button.active {
+  /* Webkit (Safari/Chrome 10) */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fae7d8), color-stop(1, #f95b06));
+  /* Webkit (Chrome 11+) */
+
+  background: -webkit-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* Mozilla Firefox */
+
+  background: -moz-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* Opera */
+
+  background: -o-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* IE10 Consumer Preview */
+
+  background: -ms-linear-gradient(top, #fae7d8 5%, #f95b06 100%);
+  /* W3C Markup, IE10 Release Preview */
+
+  background: linear-gradient(to bottom, #fae7d8 5%, #f95b06 100%);
+  /* IE9 */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#fae7d8, endColorstr=#f95b06);
+  /* IE6 & IE7 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorStr='#fae7d8', EndColorStr='#f95b06')";
+  /* IE8, IE9 */
+
+  color: #ffffff;
+}
+.wm-app .app-left-panel {
+  background-color: #fae7d8;
+}
+.wm-app .app-left-panel .app-list .app-list-item {
+  list-style: none;
+  border-bottom: 1px solid #f95b06;
+}
+.wm-app .app-left-panel .app-list .app-list-item .app-anchor,
+.wm-app .app-left-panel .app-list .app-list-item .app-button {
+  color: #803f19;
+  border: none;
+}
+.wm-app .app-left-panel .app-list .app-list-item .app-anchor:hover,
+.wm-app .app-left-panel .app-list .app-list-item .app-button:hover,
+.wm-app .app-left-panel .app-list .app-list-item .app-anchor.active,
+.wm-app .app-left-panel .app-list .app-list-item .app-button.active {
+  color: #ffffff;
+  background-color: #803f19;
+}
+.wm-app .app-left-panel .app-list .app-list-item .app-anchor:hover:after,
+.wm-app .app-left-panel .app-list .app-list-item .app-button:hover:after,
+.wm-app .app-left-panel .app-list .app-list-item .app-anchor.active:after,
+.wm-app .app-left-panel .app-list .app-list-item .app-button.active:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -6px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-right: 10px solid white;
+}
+.wm-app .app-right-panel .app-list {
+  background-color: #a9c835;
+}
+.wm-app .app-right-panel .app-list .app-list-item .app-anchor,
+.wm-app .app-right-panel .app-list .app-list-item .app-button {
+  color: #803f19;
+  background: #a9c835;
+}
+.wm-app .app-right-panel .app-list .app-list-item .app-anchor:hover,
+.wm-app .app-right-panel .app-list .app-list-item .app-button:hover,
+.wm-app .app-right-panel .app-list .app-list-item .app-anchor.active,
+.wm-app .app-right-panel .app-list .app-list-item .app-button.active {
+  color: #ffffff;
+  background-color: #74ac00;
+}
+.wm-app .app-right-panel .app-list .app-list-item .app-anchor:hover:after,
+.wm-app .app-right-panel .app-list .app-list-item .app-button:hover:after,
+.wm-app .app-right-panel .app-list .app-list-item .app-anchor.active:after,
+.wm-app .app-right-panel .app-list .app-list-item .app-button.active:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  margin-top: -6px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-left: 10px solid white;
+}
